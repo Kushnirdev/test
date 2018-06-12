@@ -38,11 +38,22 @@ echo true;
 	$dtime= mktime(9,30,00,1,18,2038);
 	echo "$dtime";
 $now=getdate();
+$mybd= mktime(9,30,00,1,21,2019);
 echo'<pre>';
 print_r ($now);	
 echo'</pre>';
-echo date("d-m-y h:i:s");
+echo date("d-m-y h:i:s")."<br>";
+$cnt = $mybd-$now{0};
+echo "<h1>till my BD $cnt seconds!</h1><br>";
+/*function test($t){
+	global $a;
+	$check = $t - $a;
+	echo $check."<br>";
+}
+$a=10;
+$vob = test(20);
+*/
 ?>
-some changes for git lessons
+some changes for git lessons<br>
 
 fill some chenges in master branch
